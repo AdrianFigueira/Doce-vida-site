@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doce Vida Brownies</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/responsive.css" />
+</head>
+
+<body class="light">
+  <div class="menssagem">
+    <h1 class="text-menssage">Bem vindo! Garanta já o seu brownie Doce Vida! Entrega para toda a cidade! ❤ ❤ ❤</h1>
+  </div>
+
+  <header>
+    <div class="logo">
+      <a onclick="changePage('home')"><img class="logo-img" src="./src/img/logo.png" alt="logo"></a>
+    </div>
+
+    <nav class="buttons">
+      <button onclick="changePage('home')"><img src="./src/img/home.png" width="20px"> Home</button>
+      <button onclick="changePage('catalog')"><img src="./src/img/brownie-icon.png" width="20px"> Doces</button>
+      <button onclick="changePage('about')"><img src="./src/img/information.png" width="20px"> Sobre</button>
+      <button onclick="changePage('contact')"><img src="./src/img/contact-us.png" width="20px"> Contato</button>
+    </nav>
+
+    <div class="actions">
+      <label class="switch">
+        <input type="checkbox" id="darkModeSwitch">
+        <span class="slider round"></span>
+        <span class="theme-icon">☀️</span>
+        <span class="theme-icon-n">🌙</span>
+      </label>
+
+      <button id="cartBtn" class="cart-btn">
+        <img src="./src/img/trolley.png" width="25px" style="margin-right: 6px;">
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="mainContent"></main>
+
+  <div id="cartNotice" class="cart-notice">🍪 Adicionado ao carrinho!</div>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Doce Vida Brownies. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5515997174443" class="whatsapp-btn" target="_blank">💬</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

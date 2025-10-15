@@ -1,0 +1,284 @@
+/* ====== RESPONSIVE.CSS ====== */
+/* Refinamento mobile + compatibilidade total */
+
+/* --- até 1200px (notebooks menores) --- */
+@media (max-width: 1200px) {
+  header {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .logo-img {
+    width: 160px;
+  }
+
+  nav button {
+    padding: 10px 8px;
+    font-size: 0.95rem;
+  }
+
+  .home-section {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .slogan-img {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .product-grid {
+    gap: 1rem;
+  }
+}
+
+/* --- até 992px (tablets horizontais) --- */
+@media (max-width: 992px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    border: none;
+    padding-top: 1rem;
+  }
+
+  nav button {
+    margin: 0.3rem;
+  }
+
+  .actions {
+    margin-top: 0.5rem;
+  }
+
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-left,
+  .home-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .slogan-img,
+  .carousel-img {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .images-doces {
+    flex-wrap: wrap;
+  }
+
+  .choco,
+  .morango,
+  .amendoim {
+    width: 320px;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+}
+
+/* --- até 768px (tablets verticais e celulares grandes) --- */
+@media (max-width: 768px) {
+  .menssagem h1 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav button {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 4px;
+  }
+
+  .cart-btn {
+    padding: 0.6rem 1rem;
+  }
+
+  .home-section {
+    padding: 1rem;
+  }
+
+  .images-doces {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choco,
+  .morango,
+  .amendoim {
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #checkoutForm {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #checkoutForm input,
+  #checkoutForm button {
+    width: 100%;
+  }
+
+  .about-section,
+  .contact-section {
+    width: 95%;
+    height: auto;
+  }
+
+  .imagem-casal {
+    flex-direction: column;
+  }
+
+  .isah,
+  .adrian {
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .whatsapp-btn {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
+
+/* --- até 576px (celulares comuns) --- */
+@media (max-width: 576px) {
+
+
+  .logo-img {
+    width: 140px;
+  }
+
+  nav button {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .cart-btn img {
+    width: 20px;
+  }
+
+  .menssagem h1 {
+    font-size: 1rem;
+  }
+
+  .home-section {
+    background-size: cover;
+  }
+
+  .slogan-img,
+  .carousel-img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+    .quest {
+    padding: 0;
+    height: 80px;
+  }
+
+  .btn-peça {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #checkoutForm {
+    padding: 0.8rem;
+  }
+
+  footer {
+    padding: 0.6rem;
+  }
+}
+
+/* --- até 400px (celulares pequenos) --- */
+@media (max-width: 400px) {
+  .menssagem h1 {
+    font-size: 0.9rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .cart-btn {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .slogan-img {
+    width: 100%;
+  }
+
+  .quest {
+    padding: 0;
+    height: 80px;
+  }
+
+  .carousel-img {
+    width: 100%;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .btn-peça {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .isah,
+  .adrian {
+    width: 95%;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
