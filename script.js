@@ -76,7 +76,7 @@ function renderPage() {
           <img src="${p.img}" alt="${p.title}">
           <h3>${p.title}</h3>
           <p>R$ ${p.price.toFixed(2)}</p>
-          <button class="add-btn" onclick="addToCart(${p.id})">Adicionar</button>
+          <button class="add-btn" onclick="addToCart(${p.id})">Adicionar +</button>
         </div>
       `;
     });
