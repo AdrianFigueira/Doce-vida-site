@@ -73,13 +73,14 @@
     max-width: 350px;
   }
 
-  .images-doces {
+  .images-doces, .videoD {
     flex-wrap: wrap;
   }
 
   .choco,
   .morango,
-  .amendoim {
+  .amendoim,
+  .video-doces {
     width: 320px;
     height: auto;
   }
@@ -125,14 +126,15 @@
     padding: 1rem;
   }
 
-  .images-doces {
+  .images-doces, .videoD {
     flex-direction: column;
     align-items: center;
   }
 
   .choco,
   .morango,
-  .amendoim {
+  .amendoim,
+  .video-doces {
     margin: 1rem 0;
     width: 90%;
   }
@@ -228,6 +230,12 @@
     height: 80px;
   }
 
+  .aviso {
+    color: red;
+    font-size: 9px;
+    
+}
+
   #checkoutForm {
     padding: 0.8rem;
   }
@@ -268,6 +276,11 @@
   .product-card {
     width: 100%;
   }
+
+  .aviso {
+    color: red;
+    font-size: 9px;   
+}
 
   .btn-peça {
     padding: 0.8rem 1.6rem;

@@ -1,7 +1,7 @@
 const PRODUCTS = [
   { id: 1, title: "Brigadeiro com Bombom de Beijinho", price: 12.0, img: "brownie1.jpg" },
-  { id: 2, title: "Brigadeiro de ninho com Morango", price: 13.5, img: "brownie2.jpg" },
-  { id: 3, title: "Doce de Leite com Amendoim", price: 14.0, img: "brownie3.jpg" },
+  { id: 2, title: "Brigadeiro de ninho com Morango", price: 12.0, img: "brownie2.jpg" },
+  { id: 3, title: "Doce de Leite com Amendoim", price: 12.0, img: "brownie3.jpg" },
 ];
 
 let page = "home";
@@ -33,6 +33,14 @@ function renderPage() {
         <div class="quest-bar">
           <img class="quest" src="./src/img/quest-bar.png" alt="Vai de Brownies Doce Vida">
         </div>
+
+      <div class="videoD">
+        <video class="video-doces" controls autoplay muted loop>
+          <source src="./src/video/video-brw-3.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos em HTML5.
+        </video>
+      </div>
+
       <div class="images-doces">
       <div class="choco">
         <img src="./brownie1.jpg" width="300px">
@@ -49,7 +57,7 @@ function renderPage() {
         <p>Brownie de doce de leite e farofa de amendoim. <br>
         — doce com contraste de texturas cremosa e crocante.</p>
       </div>
-  </div>
+    </div>
       <button onclick="changePage('catalog')" class="btn-peça">PEÇA JÁ O SEU !</button>
   </section>
     `;
@@ -76,7 +84,7 @@ function renderPage() {
           <img src="${p.img}" alt="${p.title}">
           <h3>${p.title}</h3>
           <p>R$ ${p.price.toFixed(2)}</p>
-          <button class="add-btn" onclick="addToCart(${p.id})">Adicionar +</button>
+          <button style="margin-top: 5px;" class="add-btn" onclick="addToCart(${p.id})">Adicionar +</button>
         </div>
       `;
     });
@@ -87,7 +95,7 @@ function renderPage() {
   if (page === "cart") {
     html = `<section class="cart-section"><h2>Seu Carrinho</h2>`;
     if (cart.length === 0) {
-      html +=  '<p>O carrinho está vazio.</p>';
+      html += '<p>O carrinho está vazio.</p>';
     } else {
       html += `<div class="cart-items">`;
       cart.forEach((item) => {
@@ -108,7 +116,7 @@ function renderPage() {
       });
       const total = cart.reduce((s, i) => s + i.price * i.qty, 0).toFixed(2);
       html += `</div>
-      <h3>Total: R$ ${total} <span style="color: red; font-size: 13px;">*Valores cobrados no ato da entrega !</span> </h3>
+      <h3>Total: R$ ${total} <span class="aviso" >*Valores cobrados no ato da entrega !</span> </h3>
       <form id="checkoutForm">
         <input type="text" id="firstName" placeholder="Nome" required>
         <input type="text" id="lastName" placeholder="Sobrenome" required>
@@ -132,7 +140,7 @@ function renderPage() {
     <img class="adrian" src="./src/img/foto-adrian.jpg" alt="adrian">
   </div>
 </section>`
-}
+  }
 
   if (page === "contact") {
     mainContent.innerHTML = `<section style="max-width:900px;margin:2rem auto;padding:1rem;background:#f3e8ff;border-radius:16px;box-shadow:0 4px 10px rgba(0,0,0,0.1);"><h2 style="color:#6B21A8;margin-bottom:1rem;">Contato</h2><p>📧 contato.docevida.bc@gmail.com | 📱 (15) 997174443 | 📸 Instagram: @doce_vida_bc</p></section>`;

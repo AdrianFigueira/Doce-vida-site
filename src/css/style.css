@@ -297,6 +297,14 @@ input:checked~.theme-icon-n {
     padding: 30px;
 }
 
+.videoD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
 .images-doces img {
     margin: 0 10px;
     padding: 20px ;
@@ -341,7 +349,20 @@ input:checked~.theme-icon-n {
     margin: 30px;
     border-radius: 30px;
 }
-   
+
+.video-doces {
+    background: #bebebe;
+    box-shadow: 1px 1px 20px #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 590px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
 
 .choco p {
     background: #918a8a;
@@ -409,6 +430,12 @@ input:checked~.theme-icon-n {
     padding: 1rem;
     text-align: center;
     transition: 0.3s;
+}
+
+.aviso {
+    color: red;
+    font-size: 13px;
+    
 }
 
 .dark .product-card {
